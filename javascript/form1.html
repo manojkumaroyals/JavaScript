@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORM VALIDATION</title>
+</head>
+<body>
+<form>
+	name:<input type="text" id="name"></input> <br>
+	phno:<input type="text" id="phno"></input> <br>
+	<!--<input type="submit" value="Submit" onclick="validate()"></input>
+-->
+<button onclick="validateform()">submit</button>
+
+</form>
+
+
+
+
+<script type="text/javascript">
+	function validateform(){
+	var name=document.getElementById("name");
+	var phn0=document.getElementById("phno");
+	if (name.value==""){
+		alert("pls enetr some val in name");
+	}
+	if(!(isNaN(name.value))){
+		alert("no num");
+
+	}
+	if(isNan(phno.value)){
+		alert("enter num in ph");
+	}
+}
+</script>
+</body>
+</html> 

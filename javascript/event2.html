@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STATICcally EVENT</title>
+</head>
+<body>
+	<p id="abc">hlello maang</p>
+	<button id="b" onclick="buttonclick()"onmouseover="buttonMouseOver()">submit</button>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function paraclick(){
+		document.getElementById("abc").setAttribute("style","color:yellow");
+
+	}
+	function paraMouseOver(){
+		document.getElementById("abc").setAttribute("style","color:red");
+	}
+
+document.getElementById("abc").addEventListener("click",paraclick);
+
+document.getElementById("abc").addEventListener("mouseover",paraMouseOver);
+
+function buttonclick(){
+	document.getElementById("b").setAttribute("style","color:blue");
+}
+function buttonMouseOver(){
+	document.getElementById("b").setAttribute("style","color:green");
+}
+
+
+</script>
+</body>
+</html>

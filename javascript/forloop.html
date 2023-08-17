@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORLOOP</title>
+</head>
+<body>
+<script type="text/javascript">
+	 sub=new Array("maths","english","science");
+	 marks=new Array();
+	 for(var i=0;i<sub.length;i++){
+	 	num=prompt("enter marks in"+sub[i]+"subject");
+	 	marks[i]=parseInt(num);
+	 }
+	 // msg="";
+	 // for(var i=0;i<sub.length;i++)
+	 // 	msg=msg+sub[i]+"marks=="+marks[i]+"\n";
+	 // alert(msg);
+
+	 for(m in marks)
+	 	document.write(marks[m]+"<br>") 
+	 	//console.log(marks[m]);
+</script>
+</body>
+</html>
